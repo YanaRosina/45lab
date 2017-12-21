@@ -30,7 +30,7 @@ function GENERATE()
 function getimg(){
     var XHR = ("onload" in new XMLHttpRequest()) ? XMLHttpRequest : XDomainRequest;
     var xhr = new XHR();
-    xhr.open('GET', 'https://loremflickr.com/640/480', true);
+    xhr.open('GET', 'https://picsum.photos/640/480/?random', true);
     xhr.onload = function()
     {
         var canvas = document.getElementById('q2'),
